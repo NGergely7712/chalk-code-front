@@ -1,3 +1,23 @@
+function homework() {
+    let body = document.getElementById("content-body");
+    body.innerText = "homework";
+}
+
+function exam() {
+    let body = document.getElementById("content-body");
+    body.innerText = "exam";
+}
+
+function mark() {
+    let body = document.getElementById("content-body");
+    body.innerText = "mark";
+}
+
+function schedule() {
+    let body = document.getElementById("content-body");
+    body.innerText = "schedule";
+}
+
 function addEventListenersToButtons() {
     for (let element of document.getElementsByClassName("sidebar-buttons")) {
         console.log(element)
@@ -26,26 +46,6 @@ function addEventListenersToButtons() {
         }
 
     }
-}
-
-function homework() {
-    let body = document.getElementById("content-body");
-    body.innerText = "homework";
-}
-
-function exam() {
-    let body = document.getElementById("content-body");
-    body.innerText = "exam";
-}
-
-function mark() {
-    let body = document.getElementById("content-body");
-    body.innerText = "mark";
-}
-
-function schedule() {
-    let body = document.getElementById("content-body");
-    body.innerText = "schedule";
 }
 
 function script() {
