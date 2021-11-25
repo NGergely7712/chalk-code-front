@@ -1,21 +1,37 @@
 import React from 'react'
+import sidebarBtns from './sidebarBtns.js'
+import homeworkView from "./homeworkView.js";
+
+function homework() {
+    document.getElementById("homework").innerText = "HOMEWORK";
+    let body = document.getElementById("content-body");
+    body.innerText = "homework";
+}
+
+function exam() {
+    let body = document.getElementById("content-body");
+    body.innerText = "exam";
+}
+
+function mark() {
+    let body = document.getElementById("content-body");
+    body.innerText = "mark";
+}
+
+function schedule() {
+    let body = document.getElementById("content-body");
+    body.innerText = "schedule";
+}
 
 function sidebar() {
     return (
         <div id="sidebar">
             <ul>
-                <li>
-                    <button className="sidebar-buttons" id="homework">Homeworks</button>
-                </li>
-                <li>
-                    <button className="sidebar-buttons" id="exam">Exams</button>
-                </li>
-                <li>
-                    <button className="sidebar-buttons" id="mark">Marks</button>
-                </li>
-                <li>
-                    <button className="sidebar-buttons" id="schedule">Schedule</button>
-                </li>
+                {sidebarBtns.map((item,index)=>{
+                    return(
+                        <li key={index}><button onClick={homeworkView} className={item.cname}>{item.title}</button></li>
+                    )
+                })}
             </ul>
         </div>
     )

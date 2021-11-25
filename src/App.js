@@ -1,18 +1,18 @@
 import './App.css';
 import navbar from './Components/navbar.js';
-import sidebar from "./Components/sidebar.js";
-import contentBody from "./Components/contentBody.js";
-import script from "./Components/scripts.js"
+import Sidebar from "./Components/sidebar.js";
+//import contentBody from "./Components/contentBody.js";
+import React from "react";
 
 function App() {
     return (
 
         <div>
             {navbar()}
-            <h2>Hello world</h2>
-            {sidebar()}
-            {contentBody()}
-            {script()}
+            <Sidebar />
+            <div id="content-body">
+
+            </div>
         </div>
 
     );
