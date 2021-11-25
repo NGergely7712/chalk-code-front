@@ -37,16 +37,20 @@
     }
 }
 
+#background-image {
+    float: left;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
 #sidebar {
     overflow: hidden;
     line-break: auto;
-    min-height: 100%;
     float: left;
     width: 290px;
     padding-bottom: 20px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    background: linear-gradient(to right, rgba(137, 137, 137, 0.1), #212121 90%);
+    background: linear-gradient(to right, rgba(137, 137, 137, 0.68), #212121 90%);
 }
 
 #sidebar li {

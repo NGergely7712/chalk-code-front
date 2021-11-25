@@ -5,7 +5,7 @@ export const MenuItems =[
         cname:'nav-links'
     },
     {
-        title:"Homework",
+        title:"Log in",
         url:"/homework",
         cname:'nav-links'
     },
@@ -13,10 +13,5 @@ export const MenuItems =[
         title:"",
         url:"#",
         cname:'nav-links'
-    },
-    {
-        title:"Home",
-        url:"#",
-        cname:'nav-links'
-    },
+    }
 ]

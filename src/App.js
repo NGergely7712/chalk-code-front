@@ -1,16 +1,18 @@
-
 import './App.css';
+import background from "./background.jpg"
+import Sidebar from "./Components/sidebar.js";
+import Navbar from './Components/navbar.js';
 
-import Navbar from './Components/Navbar.js';
 function App() {
-  return (
-    
-    <div>
-      
-      <Navbar/>
-    </div>
-    
-  );
+    return (
+
+        <div>
+            <img id="background-image" src={background} alt=""/>
+            <Navbar />
+            <Sidebar />
+        </div>
+
+    );
 }
 
 export default App;

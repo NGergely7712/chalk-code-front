@@ -1,35 +1,16 @@
 import React from 'react'
 import sidebarBtns from './sidebarBtns.js'
 import homeworkView from "./homeworkView.js";
-
-function homework() {
-    document.getElementById("homework").innerText = "HOMEWORK";
-    let body = document.getElementById("content-body");
-    body.innerText = "homework";
-}
-
-function exam() {
-    let body = document.getElementById("content-body");
-    body.innerText = "exam";
-}
-
-function mark() {
-    let body = document.getElementById("content-body");
-    body.innerText = "mark";
-}
-
-function schedule() {
-    let body = document.getElementById("content-body");
-    body.innerText = "schedule";
-}
+import Navbar from "./navbar";
+import {Link} from "react-router-dom";
 
 function sidebar() {
     return (
-        <div id="sidebar">
+        <div id="sidebar" style={{height: window.innerHeight - 100}}>
             <ul>
                 {sidebarBtns.map((item,index)=>{
                     return(
-                        <li key={index}><button onClick={homeworkView} className={item.cname}>{item.title}</button></li>
+                        <Link className="navbar-link-container" to={item.url}><li key={index}><button onClick={homeworkView} className={item.cname}>{item.title}</button></li></Link>
                     )
                 })}
             </ul>
