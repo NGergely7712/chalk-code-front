@@ -1,3 +1,8 @@
+@font-face {
+    font-family: chalk;
+    src: url('./Components/coalhandluketrial.ttf') format("truetype");
+}
+
 .App {
     text-align: center;
 }
@@ -37,6 +42,10 @@
     }
 }
 
+body {
+    overflow: hidden;
+}
+
 #background-image {
     float: left;
     position: absolute;
@@ -59,17 +68,23 @@
 }
 
 #sidebar .sidebar-buttons {
+    color: #fff;
     font-size: large;
-    padding-top: 15px;
+    margin-top: 10px;
+    padding: 5px;
     border: none;
     background: none;
     text-align: center;
 }
 
 #sidebar .sidebar-buttons:hover {
-    color: blue;
+    background-color: #50a8ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out; 
 }
 
 #sidebar .sidebar-buttons:active {
-    color: red;
+    background-color: #fc3f3f;
+    border-radius: 4px;
+    transition: all 0.2s ease-out; 
 }

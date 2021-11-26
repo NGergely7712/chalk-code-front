@@ -10,7 +10,7 @@ function sidebar() {
             <ul>
                 {sidebarBtns.map((item,index)=>{
                     return(
-                        <Link className="navbar-link-container" to={item.url}><li key={index}><button onClick={homeworkView} className={item.cname}>{item.title}</button></li></Link>
+                        <Link className="navbar-link-container" to={item.url}><li key={index}><button className={item.cname}>{item.title}</button></li></Link>
                     )
                 })}
             </ul>
