@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Homework from './views/Homework';
 import Teacher from "./UserTypes/Teacher";
 import Student from "./UserTypes/Student";
 import Parent from "./UserTypes/Parent";
@@ -17,11 +16,11 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}></Route>
+        <Route path="/" element={<App />}></Route>{/*
         <Route path="/homework" element={<Homework />}></Route>
         <Route path="/teacher" element={<Teacher />}></Route>
         <Route path="/student" element={<Student />}></Route>
-        <Route path="/parent" element={<Parent />}></Route>
+        <Route path="/parent" element={<Parent />}></Route>*/}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
