@@ -4,7 +4,7 @@
 }
 
 .NavbarItems {
-    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #4a66c9);
+    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #00ffc4);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -19,6 +19,13 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.navbar-logo-img {
+    filter: invert(100%);
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 8%;
 }
 
 .nav-menu {

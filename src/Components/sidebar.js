@@ -1,8 +1,8 @@
 import React from 'react'
 import sidebarBtns from './sidebarBtns.js'
-import homeworkView from "./homeworkView.js";
 import Navbar from "./navbar";
-import {Link} from "react-router-dom";
+import {Router} from "react-router-dom";
+import TableView from "../views/TableView.js";
 
 function sidebar() {
     return (
@@ -10,7 +10,7 @@ function sidebar() {
             <ul>
                 {sidebarBtns.map((item,index)=>{
                     return(
-                        <Link className="navbar-link-container" to={item.url}><li key={index}><button className={item.cname}>{item.title}</button></li></Link>
+                        <Router className="navbar-link-container" to={item.url} history={""}> : <TableView dataNeeded={item.dataNeeded}/><li key={index}><button className={item.cname}>{item.title}</button></li></Router>
                     )
                 })}
             </ul>

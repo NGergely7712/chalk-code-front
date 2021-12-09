@@ -1,22 +1,26 @@
 ﻿export const buttonItems =[
     {
-        title:"Homework",
-        url:"/homework",
+        title:"Personal Information",
+        url:"/personal-info",
+        dataNeeded: "personalInfo",
         cname:'sidebar-buttons'
     },
     {
-        title:"Exams",
+        title:"Homework",
         url:"/homework",
+        dataNeeded: "homework",
         cname:'sidebar-buttons'
     },
     {
         title:"Marks",
-        url:"/homework",
+        url:"/mark",
+        dataNeeded: "marks",
         cname:'sidebar-buttons'
     },
     {
-        title:"Schedule",
-        url:"/homework",
+        title:"Class",
+        url:"/class",
+        dataNeeded: "studentClass",
         cname:'sidebar-buttons'
     }
 ]
