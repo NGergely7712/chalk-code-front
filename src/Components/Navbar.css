@@ -21,6 +21,13 @@
     cursor: pointer;
 }
 
+.navbar-logo-img {
+    filter: invert(100%);
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 8%;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
