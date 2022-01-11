@@ -20,7 +20,7 @@ class PostForm extends Component {
 		e.preventDefault()
 		console.log(this.state)
 		axios
-			.post('https://localhost:5001/9a/add-new-student', this.state)
+			.post('https://localhost:44324/9a/add-new-student', this.state)
 			.then(response => {
 				console.log(response)
 			})
@@ -52,7 +52,7 @@ class PostForm extends Component {
 							//onChange={this.changeHandler}
 						/>
 					</div>
-					<button type="submit">Submit</button>
+					<button type="submit">Register</button>
 				</form>
 			</div>
 		)
