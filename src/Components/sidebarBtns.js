@@ -1,22 +1,22 @@
 ﻿export const buttonItems =[
     {
         title:"Homework",
-        url:"#",
+        table: "homework",
         cname:'sidebar-buttons'
     },
     {
         title:"Exams",
-        url:"#",
+        table: "homework",
         cname:'sidebar-buttons'
     },
     {
         title:"Marks",
-        url:"#",
+        table: "homework",
         cname:'sidebar-buttons'
     },
     {
         title:"Schedule",
-        url:"#",
+        table: "homework",
         cname:'sidebar-buttons'
     }
 ]

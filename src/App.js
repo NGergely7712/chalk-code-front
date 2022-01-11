@@ -8,6 +8,8 @@ function App() {
 
         <div>
             <img id="background-image" src={background} alt=""/>
+            <div id="table-view">
+            </div>
             <Navbar />
             <Sidebar />
         </div>
