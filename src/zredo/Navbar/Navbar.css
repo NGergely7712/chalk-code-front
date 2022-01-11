@@ -51,25 +51,22 @@
     margin-right: 2rem;
 }
 
-.navbar-link-container{
-    text-decoration: none;
-}
-
-.nav-links {
+.nav-menu .nav-links {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-.nav-links:hover {
-    background-color: #50a8ff;
+.nav-menu .nav-links:hover {
+    background-color: #3d3d3d;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
 
-.nav-links:active {
-    background-color: #fc3f3f;
+.nav-menu .nav-links:active {
+    color: #3d3d3d;
+    background-color: #e0e0e0;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
