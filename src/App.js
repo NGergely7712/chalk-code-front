@@ -2,6 +2,7 @@ import './App.css';
 import background from "./background.jpg"
 import Sidebar from "./Components/sidebar.js";
 import Navbar from './Components/navbar.js';
+import TableView from "./views/Tables.js";
 
 function App() {
     return (
