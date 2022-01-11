@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Homework from './views/Homework';
+//import Homework from './views/Homework';
 import Login from './views/Login';
 import Teacher from "./UserTypes/Teacher";
 import Student from "./UserTypes/Student";
@@ -21,8 +21,8 @@ ReactDOM.render(
         <Route path="/" element={<App />}></Route>{/*
           <Route path="/teacher" element={<Teacher />}></Route>
           <Route path="/student" element={<Student />}></Route>
-          <Route path="/parent" element={<Parent />}></Route>*/}
-        <Route path="/homework" element={<Homework />}></Route>
+          <Route path="/parent" element={<Parent />}></Route>
+        <Route path="/homework" element={<Homework />}></Route>*/}
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>
