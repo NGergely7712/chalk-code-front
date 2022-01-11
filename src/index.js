@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Homework from './views/Homework';
+import Login from './views/Login';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="/homework" element={<Homework />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
