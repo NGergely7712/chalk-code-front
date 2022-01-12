@@ -1,23 +1,19 @@
-import React from 'react'
+import React, {Component} from 'react'
 import SidebarBtns from './SidebarBtns.js'
 import "./Sidebar.css"
 import TableDisplay from "../ContentBody/TableDisplay";
 import ReactDOM from "react-dom";
 
-function Sidebar() {
-    return (
-        <div id="sidebar">
-            <ul>
-                {SidebarBtns.map((item, index) => {
-                    return (
-                        <li key={index}>
-                            <button className={item.cname} onClick={async() => await ReactDOM.render(<TableDisplay table="listClasses"/>, document.getElementById("main-body-container"))}>{item.title}</button>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
-    )
+class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            table: null,
+            url: null
+        }
+    }
+    
+    
 }
 
 export default Sidebar
