@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {MenuItems} from "./MenuItems"
 import './Navbar.css'
 import {Link} from "react-router-dom";
 import logo from "../../logo.png"
 
-/*class Navbar extends Component {
+class Navbar extends Component {
     state = {clicked: false}
 
     handleClick = () => {
@@ -32,37 +32,5 @@ import logo from "../../logo.png"
             </nav>
         )
     }
-}*/
-
-function profileTypeChange(profileType){
-    const navClassList = document.getElementById("NavbarItems").classList;
-    if( navClassList.length > 1 ){
-        navClassList.forEach(element => navClassList.remove(element))
-    }
-    navClassList.add(profileType)
 }
-
-function Navbar(login = null){
-    //if(login != null){
-    //    profileTypeChange(login.type)
-    //}
-    
-    return (
-        <nav className="NavbarItems">
-            <Link className="navbar-link-container" to="/"><h1 className="navbar-logo">ChalkCode</h1></Link>
-            <Link to="/"><img src={logo} alt="" className="navbar-logo-img"/></Link>
-            <span className="login-name">Welcome {login.name}!</span>
-            <ul className="nav-menu">
-                {MenuItems.map((item, index) => {
-                    return (
-                        <Link className="navbar-link-container" to={item.url}>
-                            <li key={index}><a className={item.cname} href={item.url}>{item.title}</a></li>
-                        </Link>
-                    )
-                })}
-            </ul>
-        </nav>
-    )
-}
-
 export default Navbar

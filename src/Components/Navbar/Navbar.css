@@ -1,6 +1,6 @@
 @font-face {
     font-family: chalk;
-    src: url('coalhandluketrial.ttf') format("truetype");
+    src: url('../coalhandluketrial.ttf') format("truetype");
 }
 
 .NavbarItems {
@@ -10,6 +10,11 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .parent {
@@ -49,26 +54,6 @@
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
-}
-
-.nav-menu .nav-links {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-.nav-menu .nav-links:hover {
-    background-color: #3d3d3d;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-}
-
-.nav-menu .nav-links:active {
-    color: #3d3d3d;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
 }
 
 .fa-bars {

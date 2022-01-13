@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './views/Login';
+import Login from './Components/Login/Login';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,

@@ -2,22 +2,22 @@
     {
         title:"Homework",
         table: "homework",
-        cname:'sidebar-buttons'
+        cname:'buttons'
     },
     {
         title:"Exams",
-        table: "homework",
-        cname:'sidebar-buttons'
+        table: "exams",
+        cname:'buttons'
     },
     {
         title:"Marks",
-        table: "homework",
-        cname:'sidebar-buttons'
+        table: "marks",
+        cname:'buttons'
     },
     {
-        title:"List classes",
+        title:"Show every class",
         table: "listClasses",
-        cname:'sidebar-buttons'
+        cname:'buttons'
     }
 ]
 

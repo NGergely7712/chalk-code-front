@@ -1,0 +1,14 @@
+#sidebar {
+    height: max-content;
+    overflow: hidden;
+    line-break: auto;
+    float: left;
+    width: 290px;
+    padding-bottom: 100%;
+    background: linear-gradient(to right, rgba(137, 137, 137, 0.68), #212121 90%);
+}
+
+#sidebar li {
+    margin-left: 15%;
+    list-style: none;
+}
