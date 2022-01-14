@@ -18,9 +18,15 @@ class Navbar extends Component{
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active': 'nav-menu'}>
                     {MenuItems.map((item,index)=>{
-                        return(
-                           <Link className="navbar-link-container" to={item.url}> <li key={index}><a className={item.cname} href={item.url}>{item.title}</a></li></Link>
-                        )
+                        if(localStorage.getItem('name') && item.title =="Log in"){
+                           return( <Link className="navbar-link-container" to={item.url}> <li key={index}><a className={item.cname} >Logged in as {localStorage.getItem('name')}</a></li></Link>)
+                        }else{
+                            console.log(localStorage)
+                            return(
+                                <Link className="navbar-link-container" to={item.url}> <li key={index}><a className={item.cname} href={item.url}>{item.title}</a></li></Link>
+                             )
+                        }
+                        
                     })}
                     
                 </ul>
