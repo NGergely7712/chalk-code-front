@@ -2,10 +2,11 @@ import React, {Component} from 'react'
 import SidebarBtns from './SidebarBtns.js'
 import "./Sidebar.css"
 import ReactDOM from "react-dom";
+import axios from "axios";
+import urls from "./URLs";
 import ListClasses from "../TableView/ListClasses";
 import Homework from "../TableView/Homework";
-import urls from "./URLs";
-import axios from "axios";
+import StudentInfo from "../TableView/StudentInfo";
 
 class Sidebar extends Component {
     constructor(props) {
@@ -36,12 +37,19 @@ class Sidebar extends Component {
                                                   tableContent={this.state.tableContent}/>, container)
                 }
                 break
+            case "studentInfo":
+                await this.getApiData(urls.studentRoot + "")
+                if (this.state.tableContent.length > 1) {
+                    ReactDOM.render(<StudentInfo table={this.state.table}
+                                                  tableContent={this.state.tableContent}/>, container)
+                }
+                break
             case "homework":
-                //await this.getApiData(urls.homework + "S21AKEK/homework")
-                //if (this.state.tableContent.length > 1) {
+                await this.getApiData(urls.studentRoot + "S21AKEK/homework")
+                if (this.state.tableContent.length > 1) {
                     ReactDOM.render(<Homework table={this.state.table}
                                                   tableContent={this.state.tableContent}/>, container)
-                //}
+                }
                 break
         }
     }

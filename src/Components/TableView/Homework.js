@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import "./Tables.css"
 
-class ListClasses extends Component {
+class Homework extends Component {
     constructor(props) {
         super(props);
     }
@@ -34,4 +34,4 @@ class ListClasses extends Component {
     }
 }
 
-export default ListClasses
+export default Homework
