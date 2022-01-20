@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Navbar from '../Components/navbar'
-import Sidebar from '../Components/sidebar'
+import Navbar from '../Navbar/Navbar'
+import Sidebar from '../Sidebar/Sidebar'
+
 class PostForm extends Component {
 	constructor(props) {
 		super(props)

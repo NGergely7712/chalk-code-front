@@ -1,20 +1,16 @@
 import './App.css';
 import background from "./background.jpg"
-import Sidebar from "./Components/sidebar.js";
-import Navbar from './Components/navbar.js';
-import TableView from "./views/Tables.js";
+import Sidebar from "./Components/Sidebar/Sidebar.js";
+import Navbar from './Components/Navbar/Navbar.js';
 
 function App() {
     return (
-
         <div>
             <img id="background-image" src={background} alt=""/>
-            <div id="table-view">
-            </div>
             <Navbar />
             <Sidebar />
+            <div id="main-body-container"></div>
         </div>
-
     );
 }
 
