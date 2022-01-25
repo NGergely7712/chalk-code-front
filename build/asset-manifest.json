@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62cc4d8e.chunk.css",
+    "main.js": "/static/js/main.a67a2d05.chunk.js",
+    "main.js.map": "/static/js/main.a67a2d05.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6e1506ad.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6e1506ad.js.map",
+    "static/js/2.f0527e2c.chunk.js": "/static/js/2.f0527e2c.chunk.js",
+    "static/js/2.f0527e2c.chunk.js.map": "/static/js/2.f0527e2c.chunk.js.map",
+    "static/js/3.3354a7db.chunk.js": "/static/js/3.3354a7db.chunk.js",
+    "static/js/3.3354a7db.chunk.js.map": "/static/js/3.3354a7db.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.62cc4d8e.chunk.css.map": "/static/css/main.62cc4d8e.chunk.css.map",
+    "static/js/2.f0527e2c.chunk.js.LICENSE.txt": "/static/js/2.f0527e2c.chunk.js.LICENSE.txt",
+    "static/media/background.d33aca02.jpg": "/static/media/background.d33aca02.jpg",
+    "static/media/Navbar.css": "/static/media/coalhandluketrial.d45d851f.ttf",
+    "static/media/logo.28083527.png": "/static/media/logo.28083527.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e1506ad.js",
+    "static/js/2.f0527e2c.chunk.js",
+    "static/css/main.62cc4d8e.chunk.css",
+    "static/js/main.a67a2d05.chunk.js"
+  ]
+}

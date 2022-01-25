@@ -4,12 +4,24 @@
 }
 
 .NavbarItems {
-    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #1e1e1e);
+    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #00a2e8);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+}
+
+.parent {
+    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #2c34a3);
+}
+
+.teacher {
+    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #fff200);
+}
+
+.student {
+    background: linear-gradient(90deg, rgba(137, 137, 137, 0.68), #212121ff 14%, #212121ff 40%, #22b14c);
 }
 
 .navbar-logo {
@@ -19,6 +31,13 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.navbar-logo-img {
+    filter: invert(100%);
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 8%;
 }
 
 .nav-menu {

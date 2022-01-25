@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-//import Homework from './views/Homework';
-import Login from './views/Login';
-import Teacher from "./UserTypes/Teacher";
-import Student from "./UserTypes/Student";
-import Parent from "./UserTypes/Parent";
+import Login from './Components/Login/Login';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
@@ -18,11 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}></Route>{/*
-          <Route path="/teacher" element={<Teacher />}></Route>
-          <Route path="/student" element={<Student />}></Route>
-          <Route path="/parent" element={<Parent />}></Route>
-        <Route path="/homework" element={<Homework />}></Route>*/}
+        <Route path="/" element={<App />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>
