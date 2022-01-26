@@ -1,7 +1,9 @@
+const root = "https://chalkcode.azurewebsites.net"
+
 export const URLs = {
-    root: "https://localhost:44324/",
-    listClasses: "https://localhost:44324/list-classes",
-    homework: "https://localhost:44324/students/",
+    root: root,
+    listClasses: root + "/list-classes",
+    homework: root + "/students/",
 }
 
 export default URLs
