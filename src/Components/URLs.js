@@ -1,4 +1,5 @@
-const root = "https://chalkcode.azurewebsites.net"
+const root = "https://localhost:44324"
+//const root = "https://chalkcode.azurewebsites.net"
 
 export const URLs = {
     root: root,

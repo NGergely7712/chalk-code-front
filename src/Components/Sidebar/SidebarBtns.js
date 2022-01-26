@@ -18,7 +18,12 @@
         title:"Show every class",
         table: "listClasses",
         cname:'buttons'
-    }
+    },
+    {
+        title:"Register student",
+        table: "addStudent",
+        cname:'buttons'
+    },
 ]
 
 export default buttonItems

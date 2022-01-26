@@ -1,0 +1,33 @@
+@font-face {
+    font-family: chalk;
+    src: url('../coalhandluketrial.ttf') format("truetype");
+}
+
+.form-table {
+    color: #fff;
+    overflow-y: scroll;
+    float: left;
+    height: 700px;
+    width: 65%;
+    margin-left: 8%;
+    margin-top: 5%;
+    background-color: rgba(33, 33, 33, 0.95);
+    border-radius: 70px;
+}
+
+#form-body {
+    margin: 50px;
+}
+
+.class-option {
+    margin-right: 10px;
+}
+
+.input-field {
+    margin-top: 5px;
+    width: 187px
+}
+
+#submit-button {
+    margin-left: 63px;
+}
