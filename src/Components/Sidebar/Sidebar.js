@@ -4,8 +4,10 @@ import "./Sidebar.css"
 import ReactDOM from "react-dom";
 import ListClasses from "../TableView/ListClasses";
 import Homework from "../TableView/Homework";
-import urls from "./URLs";
+import urls from "../URLs";
 import axios from "axios";
+
+import AddStudent from "../FormView/AddStudent";
 
 class Sidebar extends Component {
     constructor(props) {
@@ -35,6 +37,9 @@ class Sidebar extends Component {
                     ReactDOM.render(<ListClasses table={this.state.table}
                                                   tableContent={this.state.tableContent}/>, container)
                 }
+                break
+            case "addStudent":
+                ReactDOM.render(<AddStudent/>, container)
                 break
             case "homework":
                 //await this.getApiData(urls.homework + "S21AKEK/homework")
