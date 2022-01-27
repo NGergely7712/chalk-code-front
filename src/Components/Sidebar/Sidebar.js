@@ -64,7 +64,6 @@ class Sidebar extends Component {
                                 </li>
                             )
                         }
-                        console.log(localStorage.length)
                         if (item.role === localStorage.getItem("role")) {
                             return (
                                 <li key={index}>
