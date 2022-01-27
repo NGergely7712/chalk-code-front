@@ -4,7 +4,7 @@ import "./Sidebar.css"
 import ReactDOM from "react-dom";
 import ListClasses from "../TableView/ListClasses";
 import Homework from "../TableView/Homework";
-import urls from "./URLs";
+import urls from "../URLs"
 import axios from "axios";
 
 class Sidebar extends Component {

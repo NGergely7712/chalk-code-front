@@ -3,6 +3,7 @@ import jwt from 'jwt-decode'
 import axios from 'axios'
 import Navbar from '../Navbar/Navbar'
 import Sidebar from '../Sidebar/Sidebar'
+import url from '../URLs'
 
 class PostForm extends Component {
 	constructor(props) {
@@ -23,7 +24,7 @@ class PostForm extends Component {
 		e.preventDefault()
 		console.log(this.state)
 		axios
-			.post('https://localhost:44324/login/auth', this.state)
+			.post(url.root +'/login/auth', this.state)
 			.then(response => {
 				console.log(response)
 				const token = response.data.token;
