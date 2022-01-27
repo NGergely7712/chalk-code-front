@@ -8,6 +8,7 @@ import urls from "../URLs";
 import axios from "axios";
 
 import AddStudent from "../FormView/AddStudent";
+import ListStudents from "../TableView/ListStudents";
 
 class Sidebar extends Component {
     constructor(props) {
@@ -35,6 +36,13 @@ class Sidebar extends Component {
                 await this.getApiData(urls.listClasses)
                 if (this.state.tableContent.length > 1) {
                     ReactDOM.render(<ListClasses table={this.state.table}
+                                                 tableContent={this.state.tableContent}/>, container)
+                }
+                break
+            case "listStudents":
+                await this.getApiData(urls.listStudents)
+                if (this.state.tableContent.length > 1) {
+                    ReactDOM.render(<ListStudents table={this.state.table}
                                                  tableContent={this.state.tableContent}/>, container)
                 }
                 break

@@ -84,7 +84,7 @@ class PostForm extends Component {
                                        className="input-field" id="exampleInputPassword1" placeholder="Password"/>
                             </div>
                             <br />
-                            <button type="submit" className="buttons">Login</button>
+                            <button type="submit" id="submit-button" className="buttons">Login</button>
 
                         </form>
 
