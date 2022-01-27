@@ -30,11 +30,12 @@ class PostForm extends Component {
 				const token = response.data.token;
       			const user = jwt(token)
                 localStorage.setItem('token',token)
-                localStorage.setItem('name',user.name)
+                localStorage.setItem('name',user.unique_name)
 				localStorage.setItem('role',user.role)
-                console.log(localStorage)
+                console.log(localStorage.getItem('name'))
                 return (
                     window.location.replace("/")
+					
                     )
 			})
 			.catch(error => {
