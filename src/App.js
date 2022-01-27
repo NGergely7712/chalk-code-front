@@ -4,7 +4,7 @@ import Sidebar from "./Components/Sidebar/Sidebar.js";
 import Navbar from './Components/Navbar/Navbar.js';
 
 function App() {
-    localStorage.setItem('role', "Admin")
+    localStorage.setItem('role', "")
     console.log(localStorage)
     return (
         <div>
