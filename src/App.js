@@ -4,6 +4,8 @@ import Sidebar from "./Components/Sidebar/Sidebar.js";
 import Navbar from './Components/Navbar/Navbar.js';
 
 function App() {
+    localStorage.setItem('role', "Admin")
+    console.log(localStorage)
     return (
         <div>
             <img id="background-image" src={background} alt=""/>

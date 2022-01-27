@@ -2,27 +2,32 @@
     {
         title:"Homework",
         table: "homework",
-        cname:'buttons'
+        cname:'buttons',
+        role: ""
     },
     {
         title:"Exams",
         table: "exams",
-        cname:'buttons'
+        cname:'buttons',
+        role: ""
     },
     {
         title:"Marks",
         table: "marks",
-        cname:'buttons'
+        cname:'buttons',
+        role: ""
     },
     {
         title:"Show every class",
         table: "listClasses",
-        cname:'buttons'
+        cname:'buttons',
+        role: ""
     },
     {
         title:"Register student",
         table: "addStudent",
-        cname:'buttons'
+        cname:'buttons',
+        role: "Admin"
     },
 ]
 

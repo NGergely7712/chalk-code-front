@@ -35,7 +35,7 @@ class Sidebar extends Component {
                 await this.getApiData(urls.listClasses)
                 if (this.state.tableContent.length > 1) {
                     ReactDOM.render(<ListClasses table={this.state.table}
-                                                  tableContent={this.state.tableContent}/>, container)
+                                                 tableContent={this.state.tableContent}/>, container)
                 }
                 break
             case "addStudent":
@@ -44,8 +44,8 @@ class Sidebar extends Component {
             case "homework":
                 //await this.getApiData(urls.homework + "S21AKEK/homework")
                 //if (this.state.tableContent.length > 1) {
-                    ReactDOM.render(<Homework table={this.state.table}
-                                                  tableContent={this.state.tableContent}/>, container)
+                ReactDOM.render(<Homework table={this.state.table}
+                                          tableContent={this.state.tableContent}/>, container)
                 //}
                 break
         }
@@ -56,12 +56,23 @@ class Sidebar extends Component {
             <div id="sidebar">
                 <ul>
                     {SidebarBtns.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <button className={item.cname} id={item.table}
-                                        onClick={this.clickHandler}>{item.title}</button>
-                            </li>
-                        )
+                        if (item.role === "") {
+                            return (
+                                <li key={index}>
+                                    <button className={item.cname} id={item.table}
+                                            onClick={this.clickHandler}>{item.title}</button>
+                                </li>
+                            )
+                        }
+                        console.log(localStorage.length)
+                        if (item.role === localStorage.getItem("role")) {
+                            return (
+                                <li key={index}>
+                                    <button className={item.cname} id={item.table}
+                                            onClick={this.clickHandler}>{item.title}</button>
+                                </li>
+                            )
+                        }
                     })}
                 </ul>
             </div>

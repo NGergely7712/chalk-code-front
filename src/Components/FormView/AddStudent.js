@@ -11,19 +11,19 @@ class AddStudent extends Component {
 
         this.state = {
             name: '',
-            bDate: '',
+            birthDate: '',
             //password: ''
         }
     }
 
-    changeHandler = e => {
-        this.setState({[e.target.name]: e.target.value})
+    changeHandler = async e => {
+        await this.setState({[e.target.name]: e.target.value})
     }
 
-    submitHandler = e => {
+    submitHandler = async e => {
         e.preventDefault()
         console.log(this.state)
-        axios.post(url.root + '9a/add-new-student', this.state)
+        await axios.post(url.root + '/admin/9a/add-new-student', this.state)
             .then(response => {
                 console.log(response)
                 this.feedbackHandler();
@@ -64,12 +64,12 @@ class AddStudent extends Component {
                     </div>
                     <br/>
                     <div>
-                        <label htmlFor="bdate">Date of Birth</label>
+                        <label htmlFor="birthDate">Date of Birth</label>
                         <br/>
                         <input
                             className="input-field"
                             type="date"
-                            name="bdate"
+                            name="birthDate"
                             required
                             onChange={this.changeHandler}
                         />
