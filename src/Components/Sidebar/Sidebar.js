@@ -39,8 +39,8 @@ class Sidebar extends Component {
                                                  tableContent={this.state.tableContent}/>, container)
                 }
                 break
-            case "listStudents":
-                await this.getApiData(urls.listStudents)
+            case "getStudent":
+                await this.getApiData(urls.getStudent)
                 if (this.state.tableContent.length > 1) {
                     ReactDOM.render(<ListStudents table={this.state.table}
                                                  tableContent={this.state.tableContent}/>, container)

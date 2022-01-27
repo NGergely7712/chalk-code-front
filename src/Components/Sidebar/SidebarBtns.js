@@ -12,8 +12,8 @@
         role: ""
     },
     {
-        title:"Show every student of 9a",
-        table: "listStudents",
+        title:"Get a student",
+        table: "getStudent",
         cname:'buttons',
         role: ""
     },
