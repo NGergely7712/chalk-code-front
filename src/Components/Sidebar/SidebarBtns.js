@@ -12,14 +12,14 @@
         role: ""
     },
     {
-        title:"Get a student",
-        table: "getStudent",
+        title:"Show every class",
+        table: "listClasses",
         cname:'buttons',
         role: ""
     },
     {
-        title:"Show every class",
-        table: "listClasses",
+        title:"Get a student",
+        table: "getStudent",
         cname:'buttons',
         role: ""
     },

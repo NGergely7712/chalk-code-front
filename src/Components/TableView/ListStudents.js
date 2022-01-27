@@ -7,6 +7,7 @@ class ListStudents extends Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <div id="content-container">
                 <div className="content-table">
@@ -17,15 +18,11 @@ class ListStudents extends Component {
                             <th>Id</th>
                             <th>Date Of Birth</th>
                         </tr>
-                        {this.props.tableContent.map((item, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td>{item.name}</td>
-                                    <td>{item.PersonalId}</td>
-                                    <td>{item.DateOfBirth.toLocaleDateString()}</td>
-                                </tr>
-                            )
-                        })}
+                        <tr>
+                            <td>{this.props.tableContent.name}</td>
+                            <td>{this.props.tableContent.personalId}</td>
+                            <td>{this.props.tableContent.dateOfBirth.slice(0, 10)}</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

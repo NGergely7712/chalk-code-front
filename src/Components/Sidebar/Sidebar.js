@@ -4,11 +4,11 @@ import "./Sidebar.css"
 import ReactDOM from "react-dom";
 import ListClasses from "../TableView/ListClasses";
 import Homework from "../TableView/Homework";
+import ListStudents from "../TableView/ListStudents";
 import urls from "../URLs";
 import axios from "axios";
 
 import AddStudent from "../FormView/AddStudent";
-import ListStudents from "../TableView/ListStudents";
 
 class Sidebar extends Component {
     constructor(props) {
@@ -41,10 +41,11 @@ class Sidebar extends Component {
                 break
             case "getStudent":
                 await this.getApiData(urls.getStudent)
-                if (this.state.tableContent.length > 1) {
+                //if (this.state.tableContent.length > 1) {
+                    console.log(this.state.tableContent)
                     ReactDOM.render(<ListStudents table={this.state.table}
                                                  tableContent={this.state.tableContent}/>, container)
-                }
+                //}
                 break
             case "addStudent":
                 ReactDOM.render(<AddStudent/>, container)
